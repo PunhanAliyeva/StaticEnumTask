@@ -5,11 +5,10 @@
         static void Main(string[] args)
         {
             int[] arr = new int[0];
-            Array.Resize(ref arr, 4);
-            arr[0] = 1;
-            arr[1] = 2;
-            arr[2] = 3;
-            arr[3] = 4;
+            arr = arr.Add(1);
+            arr = arr.Add(2);
+            arr = arr.Add(3);
+            arr = arr.Add(4);
             int sum = 0;
             foreach (var item in arr)
             {
